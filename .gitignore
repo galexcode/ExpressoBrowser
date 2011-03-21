@@ -3,5 +3,8 @@ StyleCop.Cache
 *.cache
 *.user
 *.suo
+*.dll
+*.exe
 bin/
 obj/
+JSCOre/Debug/*
