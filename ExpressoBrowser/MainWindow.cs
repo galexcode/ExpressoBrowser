@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
- */ 
+ */
 
 using System;
 using System.Collections.Generic;
@@ -32,6 +32,26 @@ namespace ExpressoBrowser
         public MainWindow()
         {
             InitializeComponent();
+
+            this.browser.Navigated +=
+                new WebBrowserNavigatedEventHandler(browser_Navigated);
+
+            this.urlTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(CheckKeys);
+        }
+
+        private void CheckKeys(object sender, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                // Enter key pressed
+                e.Handled = true;
+                browser.Navigate(urlTextBox.Text);
+            }
+        }
+
+        void browser_Navigated(object sender, WebBrowserNavigatedEventArgs e)
+        {
+            urlTextBox.Text = browser.Url.ToString();
         }
     }
 }

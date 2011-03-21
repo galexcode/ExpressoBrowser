@@ -30,13 +30,13 @@
         {
             this.navPanel = new System.Windows.Forms.Panel();
             this.settingsButton = new System.Windows.Forms.Button();
-            this.urlTextBox = new Qios.DevSuite.Components.QTextBox();
             this.forwardButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
             this.stopButton = new System.Windows.Forms.Button();
             this.refreshButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
-            this.webKitBrowser1 = new WebKit.WebKitBrowser();
+            this.browser = new WebKit.WebKitBrowser();
+            this.urlTextBox = new System.Windows.Forms.TextBox();
             this.navPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,8 +44,8 @@
             // 
             this.navPanel.BackColor = System.Drawing.SystemColors.Control;
             this.navPanel.BackgroundImage = global::ExpressoBrowser.Properties.Resources.nav_background;
-            this.navPanel.Controls.Add(this.settingsButton);
             this.navPanel.Controls.Add(this.urlTextBox);
+            this.navPanel.Controls.Add(this.settingsButton);
             this.navPanel.Controls.Add(this.forwardButton);
             this.navPanel.Controls.Add(this.backButton);
             this.navPanel.Controls.Add(this.stopButton);
@@ -65,15 +65,6 @@
             this.settingsButton.Size = new System.Drawing.Size(29, 23);
             this.settingsButton.TabIndex = 6;
             this.settingsButton.UseVisualStyleBackColor = false;
-            // 
-            // urlTextBox
-            // 
-            this.urlTextBox.AllowDrop = true;
-            this.urlTextBox.ColorScheme.InputBoxOuterBorder.SetColor("VistaBlack", System.Drawing.Color.Gray, false);
-            this.urlTextBox.Location = new System.Drawing.Point(187, 11);
-            this.urlTextBox.Name = "urlTextBox";
-            this.urlTextBox.Size = new System.Drawing.Size(589, 19);
-            this.urlTextBox.TabIndex = 5;
             // 
             // forwardButton
             // 
@@ -120,16 +111,23 @@
             this.homeButton.TabIndex = 0;
             this.homeButton.UseVisualStyleBackColor = false;
             // 
-            // webKitBrowser1
+            // browser
             // 
-            this.webKitBrowser1.AutoScroll = true;
-            this.webKitBrowser1.BackColor = System.Drawing.Color.White;
-            this.webKitBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webKitBrowser1.Location = new System.Drawing.Point(0, 41);
-            this.webKitBrowser1.Name = "webKitBrowser1";
-            this.webKitBrowser1.Size = new System.Drawing.Size(823, 468);
-            this.webKitBrowser1.TabIndex = 0;
-            this.webKitBrowser1.Url = new System.Uri("http://www.google.com/", System.UriKind.Absolute);
+            this.browser.AutoScroll = true;
+            this.browser.BackColor = System.Drawing.Color.White;
+            this.browser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.browser.Location = new System.Drawing.Point(0, 41);
+            this.browser.Name = "browser";
+            this.browser.Size = new System.Drawing.Size(823, 468);
+            this.browser.TabIndex = 0;
+            this.browser.Url = new System.Uri("http://www.google.com/", System.UriKind.Absolute);
+            // 
+            // urlTextBox
+            // 
+            this.urlTextBox.Location = new System.Drawing.Point(187, 11);
+            this.urlTextBox.Name = "urlTextBox";
+            this.urlTextBox.Size = new System.Drawing.Size(589, 20);
+            this.urlTextBox.TabIndex = 7;
             // 
             // MainWindow
             // 
@@ -137,18 +135,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(823, 509);
-            this.Controls.Add(this.webKitBrowser1);
+            this.Controls.Add(this.browser);
             this.Controls.Add(this.navPanel);
             this.Name = "MainWindow";
             this.Text = "Expresso";
             this.navPanel.ResumeLayout(false);
+            this.navPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private WebKit.WebKitBrowser webKitBrowser1;
+        private WebKit.WebKitBrowser browser;
         private System.Windows.Forms.Panel navPanel;
         private System.Windows.Forms.Button homeButton;
         private System.Windows.Forms.Button refreshButton;
@@ -156,7 +155,7 @@
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button forwardButton;
         private System.Windows.Forms.Button settingsButton;
-        private Qios.DevSuite.Components.QTextBox urlTextBox;
+        private System.Windows.Forms.TextBox urlTextBox;
 
 
 
