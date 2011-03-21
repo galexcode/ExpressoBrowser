@@ -35,8 +35,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Qios.DevSuite.Components, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3cc53827b79c92fa, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -85,6 +88,27 @@
       <Project>{44AFE214-12C7-4280-898D-A7C4AABF1533}</Project>
       <Name>WebKitBrowser</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nav_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nav_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nav_reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nav_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nav_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nav_forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nav_settings.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

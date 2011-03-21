@@ -59,5 +59,54 @@ namespace ExpressoBrowser.Properties {
                 resourceCulture = value;
             }
         }
+        
+        internal static System.Drawing.Bitmap nav_back {
+            get {
+                object obj = ResourceManager.GetObject("nav_back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap nav_background {
+            get {
+                object obj = ResourceManager.GetObject("nav_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap nav_forward {
+            get {
+                object obj = ResourceManager.GetObject("nav_forward", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap nav_home {
+            get {
+                object obj = ResourceManager.GetObject("nav_home", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap nav_reload {
+            get {
+                object obj = ResourceManager.GetObject("nav_reload", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap nav_settings {
+            get {
+                object obj = ResourceManager.GetObject("nav_settings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap nav_stop {
+            get {
+                object obj = ResourceManager.GetObject("nav_stop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

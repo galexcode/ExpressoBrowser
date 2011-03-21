@@ -24,42 +24,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
 
 namespace ExpressoBrowser
 {
     public partial class MainWindow : Form
     {
-        [StructLayout(LayoutKind.Sequential)]
-
-        public struct WindowsAero
-        {
-            public int cxLeftWidth;
-            public int cxRightWidth;
-            public int cyTopHeight;
-            public int cyButtomheight;
-        }
-        
-        // Dll import for Windows Aero
-        [DllImport("dwmapi.dll")]
-        public static extern int DwmExtendFrameIntoClientArea(IntPtr hWnd, ref WindowsAero pMarinset);
-
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void MainWindow_Load(object sender, EventArgs e)
-        {
-            // Set -1 to apply Aero to the whole window
-            WindowsAero margins = new WindowsAero();
-            margins.cxLeftWidth = -1;
-            margins.cxRightWidth = -1;
-            margins.cyTopHeight = -1;
-            margins.cyButtomheight = -1;
-
-            IntPtr hwnd = this.Handle;
-            int result = DwmExtendFrameIntoClientArea(hwnd, ref margins);
         }
     }
 }
