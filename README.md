@@ -35,6 +35,6 @@ ExpressoBrowser Application is licensed under the <a href="http://www.gnu.org/li
 
 ExpressoBrowser User Interface by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/ExpressoBrowser/ExpressoBrowser/" property="cc:attributionName" rel="cc:attributionURL">Jake Paine</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nd/3.0/">Creative Commons Attribution-NoDerivs 3.0 Unported License</a>.
 
-Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/ExpressoBrowser/ExpressoBrowser/" rel="dct:source">github.com</a>.
+WebKit .NET is licensed under a simplified BSD license viewable <a href="https://github.com/webkitdotnet/webkitdotnet/blame/master/LICENSE.txt">here</a>.
 
 Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/ExpressoBrowser/ExpressoBrowser/" rel="cc:morePermissions">https://github.com/ExpressoBrowser/ExpressoBrowser/</a>.
