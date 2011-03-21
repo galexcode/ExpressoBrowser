@@ -1,12 +1,10 @@
 #  ExpressoBrowser - Fast, Wired and Full of Caffeine!
 
-<img src="https://github.com/ExpressoBrowser/ExpressoBrowser/raw/master/media/logos/ExpressoBrowser_Logo.png" width=96 height=96 title="ExpressoBrowser">
-
 ## Major Changelog:
 
-### v.1.0.0 : March, 17th 2011
+### v.1.0.0 : March, 21st 2011
 
-Source project pushed to GitHub.
+Source projects pushed to GitHub.
 
 ## Summary:
 
