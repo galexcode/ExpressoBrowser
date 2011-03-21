@@ -793,7 +793,7 @@ namespace WebKit
 
         #region WebUIDelegate event handlers
 
-        private void uiDelegate_CreateWebViewWithRequest(IWebURLRequest request, out WebView webView)
+        private void uiDelegate_CreateWebViewWithRequest(WebURLRequest request, out WebView webView)
         {
             // TODO: find out why url seems to always be empty:
             // https://bugs.webkit.org/show_bug.cgi?id=41441 explains all

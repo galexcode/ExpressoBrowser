@@ -36,7 +36,7 @@ using WebKit.Interop;
 
 namespace WebKit
 {
-    internal delegate void CreateWebViewWithRequestEvent(IWebURLRequest request, out WebView webView);
+    internal delegate void CreateWebViewWithRequestEvent(WebURLRequest request, out WebView webView);
     internal delegate void RunJavaScriptAlertPanelWithMessageEvent(WebView sender, string message);
     internal delegate int RunJavaScriptConfirmPanelWithMessageEvent(WebView sender, string message);
     internal delegate string RunJavaScriptTextInputPanelWithPromptEvent(WebView sender, string message, string defaultText);
@@ -94,12 +94,12 @@ namespace WebKit
             return owner.IsWebBrowserContextMenuEnabled ? defaultItemsHMenu : 0;
         }
 
-        public WebView createModalDialog(WebView sender, IWebURLRequest request)
+        public WebView createModalDialog(WebView sender, WebURLRequest request)
         {
             throw new NotImplementedException();
         }
 
-        public WebView createWebViewWithRequest(WebView sender, IWebURLRequest request)
+        public WebView createWebViewWithRequest(WebView sender, WebURLRequest request)
         {
             // this should be caught in the WebPolicyDelegate, but isn't in the Cairo build
             if (owner.AllowNewWindows)
