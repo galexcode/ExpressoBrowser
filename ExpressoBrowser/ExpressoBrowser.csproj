@@ -51,6 +51,7 @@
     <Reference Include="WebKitCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b967213f6d29a3be, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExpressoAgent.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>

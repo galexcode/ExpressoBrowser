@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.navPanel = new System.Windows.Forms.Panel();
+            this.urlTextBox = new System.Windows.Forms.TextBox();
             this.settingsButton = new System.Windows.Forms.Button();
             this.forwardButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
@@ -36,7 +37,6 @@
             this.refreshButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
             this.browser = new WebKit.WebKitBrowser();
-            this.urlTextBox = new System.Windows.Forms.TextBox();
             this.navPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,8 +57,18 @@
             this.navPanel.Size = new System.Drawing.Size(823, 41);
             this.navPanel.TabIndex = 1;
             // 
+            // urlTextBox
+            // 
+            this.urlTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.urlTextBox.Location = new System.Drawing.Point(187, 11);
+            this.urlTextBox.Name = "urlTextBox";
+            this.urlTextBox.Size = new System.Drawing.Size(589, 20);
+            this.urlTextBox.TabIndex = 7;
+            // 
             // settingsButton
             // 
+            this.settingsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.settingsButton.BackgroundImage = global::ExpressoBrowser.Properties.Resources.nav_settings;
             this.settingsButton.Location = new System.Drawing.Point(782, 9);
             this.settingsButton.Name = "settingsButton";
@@ -121,13 +131,6 @@
             this.browser.Size = new System.Drawing.Size(823, 468);
             this.browser.TabIndex = 0;
             this.browser.Url = new System.Uri("http://www.google.com/", System.UriKind.Absolute);
-            // 
-            // urlTextBox
-            // 
-            this.urlTextBox.Location = new System.Drawing.Point(187, 11);
-            this.urlTextBox.Name = "urlTextBox";
-            this.urlTextBox.Size = new System.Drawing.Size(589, 20);
-            this.urlTextBox.TabIndex = 7;
             // 
             // MainWindow
             // 

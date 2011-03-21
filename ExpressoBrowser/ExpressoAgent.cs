@@ -18,42 +18,20 @@
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Reflection;
 
 namespace ExpressoBrowser
 {
-    public partial class MainWindow : Form
+    static class ExpressoAgent
     {
-        public MainWindow()
+        public static string GetUserAgent()
         {
-            InitializeComponent();
+            Version BuildVersion = new Version(Application.ProductVersion);
 
-            this.browser.Navigated +=
-                new WebBrowserNavigatedEventHandler(browser_Navigated);
-
-            this.urlTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(CheckKeys);
-
-            browser.UserAgent = ExpressoAgent.GetUserAgent();
-        }
-
-        private void CheckKeys(object sender, System.Windows.Forms.KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)13)
-            {
-                // Enter key pressed
-                e.Handled = true;
-                browser.Navigate(urlTextBox.Text);
-            }
-        }
-
-        void browser_Navigated(object sender, WebBrowserNavigatedEventArgs e)
-        {
-            urlTextBox.Text = browser.Url.ToString();
+            return "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) Expresso/" + BuildVersion.Major + "." + BuildVersion.Minor + "." + BuildVersion.MinorRevision + "." + BuildVersion.Revision + " AppleWebKit/533+ (KHTML, like Gecko)";
         }
     }
 }
