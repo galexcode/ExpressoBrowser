@@ -31,6 +31,7 @@ namespace ExpressoBrowser
         {
             Version BuildVersion = new Version(Application.ProductVersion);
 
+            // Just for testing purposes - This will change in future
             return "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) Expresso/" + BuildVersion.Major + "." + BuildVersion.Minor + "." + BuildVersion.MinorRevision + "." + BuildVersion.Revision + " AppleWebKit/533+ (KHTML, like Gecko)";
         }
     }
