@@ -8,8 +8,8 @@
     <ProjectGuid>{4D0A8472-8276-4DAA-AE15-C287033BA433}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExpressoBrowser</RootNamespace>
-    <AssemblyName>Expresso</AssemblyName>
+    <RootNamespace>ExpressoBrowserTest</RootNamespace>
+    <AssemblyName>ExpressoBrowserTest</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -91,25 +91,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\nav_background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nav_home.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nav_reload.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nav_stop.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nav_back.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nav_forward.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nav_settings.png" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ExpressoBrowser.Properties {
+namespace ExpressoBrowserTest.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace ExpressoBrowser.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ExpressoBrowser.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ExpressoBrowserTest.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,55 +57,6 @@ namespace ExpressoBrowser.Properties {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        internal static System.Drawing.Bitmap nav_back {
-            get {
-                object obj = ResourceManager.GetObject("nav_back", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap nav_background {
-            get {
-                object obj = ResourceManager.GetObject("nav_background", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap nav_forward {
-            get {
-                object obj = ResourceManager.GetObject("nav_forward", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap nav_home {
-            get {
-                object obj = ResourceManager.GetObject("nav_home", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap nav_reload {
-            get {
-                object obj = ResourceManager.GetObject("nav_reload", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap nav_settings {
-            get {
-                object obj = ResourceManager.GetObject("nav_settings", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap nav_stop {
-            get {
-                object obj = ResourceManager.GetObject("nav_stop", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

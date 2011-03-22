@@ -18,42 +18,35 @@
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Reflection;
 
 namespace ExpressoBrowser
 {
-    public partial class MainWindow : Form
+    static class ExpressoAgent
     {
-        public MainWindow()
+        public static string GetUserAgent()
         {
-            InitializeComponent();
+            string cpuArch = null;
+            Version sVersion = new Version(Application.ProductVersion);
 
-            this.browser.Navigated +=
-                new WebBrowserNavigatedEventHandler(browser_Navigated);
-
-            this.urlTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(CheckKeys);
-
-            browser.UserAgent = ExpressoAgent.GetUserAgent();
-        }
-
-        private void CheckKeys(object sender, System.Windows.Forms.KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)13)
+            if (IntPtr.Size == 8)
             {
-                // Enter key pressed
-                e.Handled = true;
-                browser.Navigate(urlTextBox.Text);
+                cpuArch = "x86_64";
             }
-        }
+            else if (IntPtr.Size == 4)
+            {
+                cpuArch = "x86";
+            }
+            else
+            {
+                cpuArch = "UnknownARCH";
+            }
 
-        void browser_Navigated(object sender, WebBrowserNavigatedEventArgs e)
-        {
-            urlTextBox.Text = browser.Url.ToString();
+            // Just for testing purposes - This will change in future
+            return "Mozilla/5.0 (" + Environment.OSVersion.Platform + " " + cpuArch + ";) Expresso/" + sVersion.Major + "." + sVersion.Minor + "." + sVersion.MinorRevision + "." + sVersion.Revision + " AppleWebKit/533+ (KHTML, like Gecko)";
         }
     }
 }

@@ -1,13 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressoBrowser", "ExpressoBrowser\ExpressoBrowser.csproj", "{4D0A8472-8276-4DAA-AE15-C287033BA433}"
-	ProjectSection(ProjectDependencies) = postProject
-		{44AFE214-12C7-4280-898D-A7C4AABF1533} = {44AFE214-12C7-4280-898D-A7C4AABF1533}
-		{D1C8CE15-4279-45DA-989A-54561E0FD842} = {D1C8CE15-4279-45DA-989A-54561E0FD842}
-		{287EEE45-1390-44D5-982F-0B96D4A077DA} = {287EEE45-1390-44D5-982F-0B96D4A077DA}
-	EndProjectSection
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JSCore", "JSCore\JSCore.vcxproj", "{287EEE45-1390-44D5-982F-0B96D4A077DA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebKitCore", "WebKitCore\WebKitCore.csproj", "{D1C8CE15-4279-45DA-989A-54561E0FD842}"
@@ -16,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebKitCore", "WebKitCore\We
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebKitBrowser", "WebKitBrowser\WebKitBrowser.csproj", "{44AFE214-12C7-4280-898D-A7C4AABF1533}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D1C8CE15-4279-45DA-989A-54561E0FD842} = {D1C8CE15-4279-45DA-989A-54561E0FD842}
+		{287EEE45-1390-44D5-982F-0B96D4A077DA} = {287EEE45-1390-44D5-982F-0B96D4A077DA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressoBrowserTest", "ExpressoBrowserTest\ExpressoBrowserTest.csproj", "{4D0A8472-8276-4DAA-AE15-C287033BA433}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D1C8CE15-4279-45DA-989A-54561E0FD842} = {D1C8CE15-4279-45DA-989A-54561E0FD842}
 		{287EEE45-1390-44D5-982F-0B96D4A077DA} = {287EEE45-1390-44D5-982F-0B96D4A077DA}
@@ -33,18 +32,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Debug|Win32.ActiveCfg = Debug|x86
-		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Debug|x86.ActiveCfg = Debug|x86
-		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Debug|x86.Build.0 = Debug|x86
-		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|Any CPU.ActiveCfg = Release|x86
-		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|Mixed Platforms.Build.0 = Release|x86
-		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|Win32.ActiveCfg = Release|x86
-		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|x86.ActiveCfg = Release|x86
-		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|x86.Build.0 = Release|x86
 		{287EEE45-1390-44D5-982F-0B96D4A077DA}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{287EEE45-1390-44D5-982F-0B96D4A077DA}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
 		{287EEE45-1390-44D5-982F-0B96D4A077DA}.Debug|Mixed Platforms.Build.0 = Debug|Win32
@@ -81,6 +68,18 @@ Global
 		{44AFE214-12C7-4280-898D-A7C4AABF1533}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{44AFE214-12C7-4280-898D-A7C4AABF1533}.Release|Win32.ActiveCfg = Release|Any CPU
 		{44AFE214-12C7-4280-898D-A7C4AABF1533}.Release|x86.ActiveCfg = Release|Any CPU
+		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Debug|Win32.ActiveCfg = Debug|x86
+		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Debug|x86.ActiveCfg = Debug|x86
+		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Debug|x86.Build.0 = Debug|x86
+		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|Any CPU.ActiveCfg = Release|x86
+		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|Mixed Platforms.Build.0 = Release|x86
+		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|Win32.ActiveCfg = Release|x86
+		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|x86.ActiveCfg = Release|x86
+		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
