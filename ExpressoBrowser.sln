@@ -20,6 +20,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressoBrowserTest", "Expr
 		{287EEE45-1390-44D5-982F-0B96D4A077DA} = {287EEE45-1390-44D5-982F-0B96D4A077DA}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressoBrowser", "ExpressoBrowser\ExpressoBrowser.csproj", "{78210BA1-5B65-4A79-B684-367A274F111C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{44AFE214-12C7-4280-898D-A7C4AABF1533} = {44AFE214-12C7-4280-898D-A7C4AABF1533}
+		{D1C8CE15-4279-45DA-989A-54561E0FD842} = {D1C8CE15-4279-45DA-989A-54561E0FD842}
+		{287EEE45-1390-44D5-982F-0B96D4A077DA} = {287EEE45-1390-44D5-982F-0B96D4A077DA}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +87,18 @@ Global
 		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|Win32.ActiveCfg = Release|x86
 		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|x86.ActiveCfg = Release|x86
 		{4D0A8472-8276-4DAA-AE15-C287033BA433}.Release|x86.Build.0 = Release|x86
+		{78210BA1-5B65-4A79-B684-367A274F111C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{78210BA1-5B65-4A79-B684-367A274F111C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{78210BA1-5B65-4A79-B684-367A274F111C}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{78210BA1-5B65-4A79-B684-367A274F111C}.Debug|Win32.ActiveCfg = Debug|x86
+		{78210BA1-5B65-4A79-B684-367A274F111C}.Debug|x86.ActiveCfg = Debug|x86
+		{78210BA1-5B65-4A79-B684-367A274F111C}.Debug|x86.Build.0 = Debug|x86
+		{78210BA1-5B65-4A79-B684-367A274F111C}.Release|Any CPU.ActiveCfg = Release|x86
+		{78210BA1-5B65-4A79-B684-367A274F111C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{78210BA1-5B65-4A79-B684-367A274F111C}.Release|Mixed Platforms.Build.0 = Release|x86
+		{78210BA1-5B65-4A79-B684-367A274F111C}.Release|Win32.ActiveCfg = Release|x86
+		{78210BA1-5B65-4A79-B684-367A274F111C}.Release|x86.ActiveCfg = Release|x86
+		{78210BA1-5B65-4A79-B684-367A274F111C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
