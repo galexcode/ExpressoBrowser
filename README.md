@@ -2,6 +2,10 @@
 
 ## Major Changelog:
 
+### v.1.26.0 : March, 22st 2011
+
+ExpressoBrowserTest completed. Runs JavaScript, HTML and CSS tests.
+
 ### v.1.0.0 : March, 21st 2011
 
 Source projects pushed to GitHub.
