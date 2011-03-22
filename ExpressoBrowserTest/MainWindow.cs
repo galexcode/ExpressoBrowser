@@ -71,15 +71,5 @@ namespace ExpressoBrowser
         {
             webKitBrowser1.Navigate("http://acid3.acidtests.org/");
         }
-
-        private void hTML5SpeedReadToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            webKitBrowser1.Navigate("http://ie.microsoft.com/testdrive/Performance/SpeedReading/Default.html");
-        }
-
-        private void hardwareAccelerationToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            webKitBrowser1.Navigate("http://ie.microsoft.com/testdrive/Graphics/GraphicsAccelebration/Default.html");
-        }
     }
 }

@@ -37,8 +37,6 @@
             this.krakenBenchmarkToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.v8BenchmarkToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.acid3TestToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.hTML5SpeedReadToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.hardwareAccelerationToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.browserTestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -96,9 +94,7 @@
             this.sunSpiderBenchmarkToolStripMenuItem1,
             this.krakenBenchmarkToolStripMenuItem1,
             this.v8BenchmarkToolStripMenuItem1,
-            this.acid3TestToolStripMenuItem1,
-            this.hTML5SpeedReadToolStripMenuItem1,
-            this.hardwareAccelerationToolStripMenuItem1});
+            this.acid3TestToolStripMenuItem1});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(91, 20);
             this.toolStripMenuItem2.Text = "Browser Tests";
@@ -106,44 +102,30 @@
             // sunSpiderBenchmarkToolStripMenuItem1
             // 
             this.sunSpiderBenchmarkToolStripMenuItem1.Name = "sunSpiderBenchmarkToolStripMenuItem1";
-            this.sunSpiderBenchmarkToolStripMenuItem1.Size = new System.Drawing.Size(194, 22);
+            this.sunSpiderBenchmarkToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
             this.sunSpiderBenchmarkToolStripMenuItem1.Text = "SunSpider Benchmark";
             this.sunSpiderBenchmarkToolStripMenuItem1.Click += new System.EventHandler(this.sunSpiderBenchmarkToolStripMenuItem1_Click);
             // 
             // krakenBenchmarkToolStripMenuItem1
             // 
             this.krakenBenchmarkToolStripMenuItem1.Name = "krakenBenchmarkToolStripMenuItem1";
-            this.krakenBenchmarkToolStripMenuItem1.Size = new System.Drawing.Size(194, 22);
+            this.krakenBenchmarkToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
             this.krakenBenchmarkToolStripMenuItem1.Text = "Kraken Benchmark";
             this.krakenBenchmarkToolStripMenuItem1.Click += new System.EventHandler(this.krakenBenchmarkToolStripMenuItem1_Click);
             // 
             // v8BenchmarkToolStripMenuItem1
             // 
             this.v8BenchmarkToolStripMenuItem1.Name = "v8BenchmarkToolStripMenuItem1";
-            this.v8BenchmarkToolStripMenuItem1.Size = new System.Drawing.Size(194, 22);
+            this.v8BenchmarkToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
             this.v8BenchmarkToolStripMenuItem1.Text = "V8 Benchmark";
             this.v8BenchmarkToolStripMenuItem1.Click += new System.EventHandler(this.v8BenchmarkToolStripMenuItem1_Click);
             // 
             // acid3TestToolStripMenuItem1
             // 
             this.acid3TestToolStripMenuItem1.Name = "acid3TestToolStripMenuItem1";
-            this.acid3TestToolStripMenuItem1.Size = new System.Drawing.Size(194, 22);
+            this.acid3TestToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
             this.acid3TestToolStripMenuItem1.Text = "Acid3 Test";
             this.acid3TestToolStripMenuItem1.Click += new System.EventHandler(this.acid3TestToolStripMenuItem1_Click);
-            // 
-            // hTML5SpeedReadToolStripMenuItem1
-            // 
-            this.hTML5SpeedReadToolStripMenuItem1.Name = "hTML5SpeedReadToolStripMenuItem1";
-            this.hTML5SpeedReadToolStripMenuItem1.Size = new System.Drawing.Size(194, 22);
-            this.hTML5SpeedReadToolStripMenuItem1.Text = "HTML5 Speed Read";
-            this.hTML5SpeedReadToolStripMenuItem1.Click += new System.EventHandler(this.hTML5SpeedReadToolStripMenuItem1_Click);
-            // 
-            // hardwareAccelerationToolStripMenuItem1
-            // 
-            this.hardwareAccelerationToolStripMenuItem1.Name = "hardwareAccelerationToolStripMenuItem1";
-            this.hardwareAccelerationToolStripMenuItem1.Size = new System.Drawing.Size(194, 22);
-            this.hardwareAccelerationToolStripMenuItem1.Text = "Hardware Acceleration";
-            this.hardwareAccelerationToolStripMenuItem1.Click += new System.EventHandler(this.hardwareAccelerationToolStripMenuItem1_Click);
             // 
             // fileToolStripMenuItem
             // 
@@ -279,8 +261,6 @@
         private System.Windows.Forms.ToolStripMenuItem krakenBenchmarkToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem v8BenchmarkToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem acid3TestToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem hTML5SpeedReadToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem hardwareAccelerationToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
 
