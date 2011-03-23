@@ -26,6 +26,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
+
 namespace ExpressoBrowser
 {
     public partial class MainForm : Form
@@ -44,14 +45,24 @@ namespace ExpressoBrowser
         /// <param name="e"></param>
         private void MainForm_Load(object sender, EventArgs e)
         {
+            try
             {
-                AeroGlass.WindowsAero margins = new AeroGlass.WindowsAero();
-                margins.cxLeftWidth = -1;
-                margins.cxRightWidth = -1;
-                margins.cyTopHeight = -1;
-                margins.cyButtomheight = -1;
-                IntPtr hwnd = this.Handle;
-                int result = AeroGlass.DwmExtendFrameIntoClientArea(hwnd, ref margins);
+                {
+                    AeroGlass.WindowsAero margins = new AeroGlass.WindowsAero();
+                    margins.cxLeftWidth = -1;
+                    margins.cxRightWidth = -1;
+                    margins.cyTopHeight = -1;
+                    margins.cyButtomheight = -1;
+
+                    IntPtr hwnd = this.Handle;
+                    int result = AeroGlass.DwmExtendFrameIntoClientArea(hwnd, ref margins);
+                    this.BackColor = Color.Black;
+                }
+            }
+            catch (System.Exception errorCode)
+            {
+                MessageBox.Show(errorCode.Message, "Error!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
