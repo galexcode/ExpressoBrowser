@@ -24,6 +24,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace ExpressoBrowser
 {
@@ -32,6 +33,26 @@ namespace ExpressoBrowser
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        /// <summary>
+        /// Code to apply the Aero effect to the Window.
+        /// Set all the four value -1 to apply glass effect to the whole window
+        /// Set custom value to make specific part of the window glassy
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            {
+                AeroGlass.WindowsAero margins = new AeroGlass.WindowsAero();
+                margins.cxLeftWidth = -1;
+                margins.cxRightWidth = -1;
+                margins.cyTopHeight = -1;
+                margins.cyButtomheight = -1;
+                IntPtr hwnd = this.Handle;
+                int result = AeroGlass.DwmExtendFrameIntoClientArea(hwnd, ref margins);
+            }
         }
     }
 }
