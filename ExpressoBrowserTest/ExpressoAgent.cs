@@ -29,7 +29,7 @@ namespace ExpressoBrowser
     {
         public static string GetUserAgent()
         {
-            string cpuArch = null;
+            string cpuArch = string.Empty;
             Version sVersion = new Version(Application.ProductVersion);
 
             if (IntPtr.Size == 8)
