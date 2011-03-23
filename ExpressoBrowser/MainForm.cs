@@ -40,6 +40,7 @@ namespace ExpressoBrowser
         /// Code to apply the Aero effect to the Window.
         /// Set all the four value -1 to apply glass effect to the whole window
         /// Set custom value to make specific part of the window glassy
+        /// Catch is a workaround for now until a proper system has been put in place
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -56,13 +57,12 @@ namespace ExpressoBrowser
 
                     IntPtr hwnd = this.Handle;
                     int result = AeroGlass.DwmExtendFrameIntoClientArea(hwnd, ref margins);
-                    this.BackColor = Color.Black;
+                    this.BackColor = System.Drawing.Color.WhiteSmoke;
                 }
             }
-            catch (System.Exception errorCode)
+            catch (System.Exception)
             {
-                MessageBox.Show(errorCode.Message, "Error!",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Do Nothing
             }
         }
     }

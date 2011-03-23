@@ -38,12 +38,14 @@
             this.ClientSize = new System.Drawing.Size(711, 512);
             this.Name = "MainForm";
             this.Text = "ExpressoBrowser";
+            this.TransparencyKey = System.Drawing.Color.WhiteSmoke;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
     }
 }
 
