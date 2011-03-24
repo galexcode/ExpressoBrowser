@@ -41,6 +41,7 @@ namespace ExpressoBrowser
         /// Set all the four value -1 to apply glass effect to the whole window
         /// Set custom value to make specific part of the window glassy
         /// Catch is a workaround for now until a proper system has been put in place
+        /// Color.DarkKhaki sets the form Aero trigger due to a bug in VS2010 where other colors allow click through
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
