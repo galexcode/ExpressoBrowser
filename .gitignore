@@ -8,3 +8,6 @@ StyleCop.Cache
 bin/
 obj/
 JSCore/Debug/*
+JSCore/Release/*
+*.sdf
+*opensdf
