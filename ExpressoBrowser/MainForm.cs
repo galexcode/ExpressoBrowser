@@ -57,7 +57,7 @@ namespace ExpressoBrowser
 
                     IntPtr hwnd = this.Handle;
                     int result = AeroGlass.DwmExtendFrameIntoClientArea(hwnd, ref margins);
-                    this.BackColor = System.Drawing.Color.WhiteSmoke;
+                    this.BackColor = Color.DarkKhaki;
                 }
             }
             catch (System.Exception)
