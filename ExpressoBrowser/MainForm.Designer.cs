@@ -28,48 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.addressBox = new System.Windows.Forms.TextBox();
+            this.optionsButton = new System.Windows.Forms.Button();
+            this.stopButton = new System.Windows.Forms.Button();
             this.forwardButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
             this.reloadButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
+            this.navPanel = new System.Windows.Forms.Panel();
+            this.navPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // addressBox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.addressBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(145, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(475, 22);
-            this.textBox1.TabIndex = 4;
+            this.addressBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.addressBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
+            this.addressBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.addressBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addressBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressBox.Location = new System.Drawing.Point(145, 6);
+            this.addressBox.Name = "addressBox";
+            this.addressBox.Size = new System.Drawing.Size(479, 22);
+            this.addressBox.TabIndex = 4;
             // 
-            // button2
+            // optionsButton
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackgroundImage = global::ExpressoBrowser.Properties.Resources.nav_settings;
-            this.button2.Location = new System.Drawing.Point(661, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(29, 23);
-            this.button2.TabIndex = 6;
-            this.button2.UseVisualStyleBackColor = true;
+            this.optionsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.optionsButton.BackgroundImage = global::ExpressoBrowser.Properties.Resources.nav_settings;
+            this.optionsButton.Location = new System.Drawing.Point(665, 5);
+            this.optionsButton.Name = "optionsButton";
+            this.optionsButton.Size = new System.Drawing.Size(29, 23);
+            this.optionsButton.TabIndex = 6;
+            this.optionsButton.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // stopButton
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackgroundImage = global::ExpressoBrowser.Properties.Resources.nav_stop;
-            this.button1.Location = new System.Drawing.Point(626, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(29, 23);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = true;
+            this.stopButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.stopButton.BackgroundImage = global::ExpressoBrowser.Properties.Resources.nav_stop;
+            this.stopButton.Location = new System.Drawing.Point(630, 5);
+            this.stopButton.Name = "stopButton";
+            this.stopButton.Size = new System.Drawing.Size(29, 23);
+            this.stopButton.TabIndex = 5;
+            this.stopButton.UseVisualStyleBackColor = true;
             // 
             // forwardButton
             // 
@@ -111,23 +113,34 @@
             this.homeButton.TabIndex = 0;
             this.homeButton.UseVisualStyleBackColor = false;
             // 
+            // navPanel
+            // 
+            this.navPanel.BackColor = System.Drawing.Color.DarkKhaki;
+            this.navPanel.Controls.Add(this.stopButton);
+            this.navPanel.Controls.Add(this.optionsButton);
+            this.navPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.navPanel.Location = new System.Drawing.Point(0, 0);
+            this.navPanel.Name = "navPanel";
+            this.navPanel.Size = new System.Drawing.Size(706, 35);
+            this.navPanel.TabIndex = 7;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(704, 512);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(706, 512);
+            this.Controls.Add(this.addressBox);
             this.Controls.Add(this.forwardButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.reloadButton);
             this.Controls.Add(this.homeButton);
+            this.Controls.Add(this.navPanel);
             this.Name = "MainForm";
             this.Text = "ExpressoBrowser";
             this.TransparencyKey = System.Drawing.Color.DarkKhaki;
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.navPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,9 +152,10 @@
         private System.Windows.Forms.Button reloadButton;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button forwardButton;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox addressBox;
+        private System.Windows.Forms.Button stopButton;
+        private System.Windows.Forms.Button optionsButton;
+        private System.Windows.Forms.Panel navPanel;
 
 
     }
