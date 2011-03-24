@@ -63,7 +63,8 @@ namespace ExpressoBrowser
             }
             catch (System.Exception)
             {
-                // Do Nothing
+                this.BackColor = DefaultBackColor;
+                navPanel.BackColor = DefaultBackColor;
             }
         }
     }
