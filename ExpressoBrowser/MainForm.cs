@@ -63,6 +63,8 @@ namespace ExpressoBrowser
             }
             catch (System.Exception)
             {
+                /// Here we default back to the original color if Aero cannot be enabled.
+                /// Such as if the user is running Windows XP or Vista Basic
                 this.BackColor = DefaultBackColor;
                 navPanel.BackColor = DefaultBackColor;
             }
