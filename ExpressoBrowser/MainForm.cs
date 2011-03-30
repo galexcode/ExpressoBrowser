@@ -108,5 +108,41 @@ namespace ExpressoBrowser
         {
             this.Text = "ExpressoBrowser - " + browser.DocumentTitle;
         }
+
+        /// Home button funtion
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            // Code for the homepage will go here
+        }
+
+        /// Reload button funtion
+        private void reloadButton_Click(object sender, EventArgs e)
+        {
+            this.browser.Reload();
+        }
+
+        /// Back button funtion
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            this.browser.GoBack();
+        }
+
+        /// Forward button funtion
+        private void forwardButton_Click(object sender, EventArgs e)
+        {
+            this.browser.GoForward();
+        }
+
+        /// Stop button funtion
+        private void stopButton_Click(object sender, EventArgs e)
+        {
+            this.browser.Stop();
+        }
+
+        /// Options button funtion
+        private void optionsButton_Click(object sender, EventArgs e)
+        {
+            // Code for Settings form will go here
+        }
     }
 }

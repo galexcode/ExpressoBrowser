@@ -67,6 +67,7 @@
             this.optionsButton.Size = new System.Drawing.Size(29, 23);
             this.optionsButton.TabIndex = 6;
             this.optionsButton.UseVisualStyleBackColor = true;
+            this.optionsButton.Click += new System.EventHandler(this.optionsButton_Click);
             // 
             // stopButton
             // 
@@ -77,6 +78,7 @@
             this.stopButton.Size = new System.Drawing.Size(29, 23);
             this.stopButton.TabIndex = 5;
             this.stopButton.UseVisualStyleBackColor = true;
+            this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
             // 
             // forwardButton
             // 
@@ -87,6 +89,7 @@
             this.forwardButton.Size = new System.Drawing.Size(29, 23);
             this.forwardButton.TabIndex = 3;
             this.forwardButton.UseVisualStyleBackColor = true;
+            this.forwardButton.Click += new System.EventHandler(this.forwardButton_Click);
             // 
             // backButton
             // 
@@ -97,6 +100,7 @@
             this.backButton.Size = new System.Drawing.Size(29, 23);
             this.backButton.TabIndex = 2;
             this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // reloadButton
             // 
@@ -107,6 +111,7 @@
             this.reloadButton.Size = new System.Drawing.Size(29, 23);
             this.reloadButton.TabIndex = 1;
             this.reloadButton.UseVisualStyleBackColor = true;
+            this.reloadButton.Click += new System.EventHandler(this.reloadButton_Click);
             // 
             // homeButton
             // 
