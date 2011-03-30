@@ -1,15 +1,5 @@
 #  ExpressoBrowser - Fast, Wired and Full of Caffeine!
 
-## Major Changelog:
-
-### v.1.26.0 : March, 22st 2011
-
-ExpressoBrowserTest completed. Runs JavaScript, HTML and CSS tests.
-
-### v.1.0.0 : March, 21st 2011
-
-Source projects pushed to GitHub.
-
 ## Summary:
 
 ExpressoBrowser is designed to be a simple fast web browser to learn simple bindings bringing in the WebKit and JavaScriptCore rendering engine to C# and .NET.
