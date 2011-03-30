@@ -142,7 +142,8 @@ namespace ExpressoBrowser
         /// Options button funtion
         private void optionsButton_Click(object sender, EventArgs e)
         {
-            // Code for Settings form will go here
+            OptionsForm optionsForm = new OptionsForm();
+            optionsForm.Show();
         }
     }
 }
