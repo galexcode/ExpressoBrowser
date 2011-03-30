@@ -36,7 +36,12 @@
             this.reloadButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
             this.navPanel = new System.Windows.Forms.Panel();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.browser = new WebKit.WebKitBrowser();
             this.navPanel.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // addressBox
@@ -112,6 +117,7 @@
             this.homeButton.Size = new System.Drawing.Size(29, 23);
             this.homeButton.TabIndex = 0;
             this.homeButton.UseVisualStyleBackColor = false;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // navPanel
             // 
@@ -124,12 +130,45 @@
             this.navPanel.Size = new System.Drawing.Size(706, 35);
             this.navPanel.TabIndex = 7;
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.browser);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(698, 451);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabControl
+            // 
+            this.tabControl.Controls.Add(this.tabPage1);
+            this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl.Location = new System.Drawing.Point(0, 35);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(706, 477);
+            this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl.TabIndex = 8;
+            // 
+            // browser
+            // 
+            this.browser.BackColor = System.Drawing.Color.White;
+            this.browser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.browser.Location = new System.Drawing.Point(3, 3);
+            this.browser.Name = "browser";
+            this.browser.Size = new System.Drawing.Size(692, 445);
+            this.browser.TabIndex = 0;
+            this.browser.Url = new System.Uri("http://www.google.com", System.UriKind.Absolute);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(706, 512);
+            this.Controls.Add(this.tabControl);
             this.Controls.Add(this.addressBox);
             this.Controls.Add(this.forwardButton);
             this.Controls.Add(this.backButton);
@@ -141,6 +180,8 @@
             this.TransparencyKey = System.Drawing.Color.DarkKhaki;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.navPanel.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabControl.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,6 +197,9 @@
         private System.Windows.Forms.Button stopButton;
         private System.Windows.Forms.Button optionsButton;
         private System.Windows.Forms.Panel navPanel;
+        private System.Windows.Forms.TabPage tabPage1;
+        private WebKit.WebKitBrowser browser;
+        private System.Windows.Forms.TabControl tabControl;
 
 
     }

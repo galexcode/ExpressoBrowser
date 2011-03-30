@@ -68,6 +68,45 @@ namespace ExpressoBrowser
                 this.BackColor = DefaultBackColor;
                 navPanel.BackColor = DefaultBackColor;
             }
+
+            this.Load += new EventHandler(MainForm_Load);
+            this.browser.Navigated +=
+                new WebBrowserNavigatedEventHandler(browser_Navigated);
+        }
+        
+        /// <summary>
+        /// Navigate to requested webpage when enter is pressed
+        /// We handle the keypress so no sound 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CheckKeys(object sender, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                e.Handled = true;
+                browser.Navigate(addressBox.Text);
+            }
+        }
+
+        /// <summary>
+        /// This updates the actual webpage location in the addressBox while we navigate
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void browser_Navigated(object sender, WebBrowserNavigatedEventArgs e)
+        {
+            addressBox.Text = browser.Url.ToString();
+        }
+
+        /// <summary>
+        /// Updates the title of MainForm to display the webpage name
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void browser_DocumentTitleChanged(object sender, EventArgs e)
+        {
+            this.Text = "ExpressoBrowser - " + browser.DocumentTitle;
         }
     }
 }
