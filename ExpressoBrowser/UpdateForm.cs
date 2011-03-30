@@ -48,6 +48,13 @@ namespace ExpressoBrowser
                 this.Hide();
         }
 
+        /// <summary>
+        /// Here the update check is performed
+        /// Simply reads from a text file over the web and compaires the result
+        /// If results match nothing happens, if results differ it prompts user to download the update
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void updateThread_DoWork(object sender, DoWorkEventArgs e)
         {
             try
