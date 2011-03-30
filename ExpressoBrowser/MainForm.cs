@@ -69,6 +69,9 @@ namespace ExpressoBrowser
                 navPanel.BackColor = DefaultBackColor;
             }
 
+            UpdateForm updateCheck = new UpdateForm();
+            updateCheck.Show();
+
             this.Load += new EventHandler(MainForm_Load);
             this.browser.Navigated +=
                 new WebBrowserNavigatedEventHandler(browser_Navigated);

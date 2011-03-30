@@ -24,14 +24,61 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Net;
+using System.Threading;
+using System.Diagnostics;
 
 namespace ExpressoBrowser
 {
     public partial class UpdateForm : Form
     {
+        string versionURL = "https://github.com/ExpressoBrowser/ExpressoBrowser/raw/master/update/version.txt";
+        string result = null;
+
         public UpdateForm()
         {
             InitializeComponent();
+        }
+
+        public void UpdateForm_Load(object sender, EventArgs e)
+        {
+            updateThread.RunWorkerAsync();
+
+            if (FormWindowState.Minimized == WindowState)
+                this.Hide();
+        }
+
+        private void updateThread_DoWork(object sender, DoWorkEventArgs e)
+        {
+            try
+            {
+                WebClient client = new WebClient();
+                result = client.DownloadString(versionURL);
+
+                if (result.Contains("ExpressoBrowser_v1.0"))
+                {
+                    // Do nothing
+                }
+                else
+                {
+                    DialogResult updateResult = MessageBox.Show("A update for ExpressoBrowser is avaliable! Would you like to downlo ad the latest version?", "Update Avaliable!",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk);
+                    if (updateResult == DialogResult.Yes)
+                    {
+                        Application.Exit();
+                        Process.Start("https://github.com/ExpressoBrowser/ExpressoBrowser/raw/master/update/update.exe");
+                    }
+                    else if (updateResult == DialogResult.No)
+                    {
+                        // Do nothing
+                    }
+                }
+            }
+            catch
+            {
+                // Do nothing
+                // Stops any errors is user is not connected to the internet
+            }
         }
     }
 }
