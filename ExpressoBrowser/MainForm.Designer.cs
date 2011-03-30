@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.addressBox = new System.Windows.Forms.TextBox();
             this.optionsButton = new System.Windows.Forms.Button();
             this.stopButton = new System.Windows.Forms.Button();
@@ -180,6 +181,7 @@
             this.Controls.Add(this.reloadButton);
             this.Controls.Add(this.homeButton);
             this.Controls.Add(this.navPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "ExpressoBrowser";
             this.TransparencyKey = System.Drawing.Color.DarkKhaki;
