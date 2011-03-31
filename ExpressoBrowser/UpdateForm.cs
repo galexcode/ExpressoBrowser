@@ -38,14 +38,14 @@ namespace ExpressoBrowser
         public UpdateForm()
         {
             InitializeComponent();
+
+            this.ShowInTaskbar = false;
+            this.Hide();
         }
 
         public void UpdateForm_Load(object sender, EventArgs e)
         {
             updateThread.RunWorkerAsync();
-
-            if (FormWindowState.Minimized == WindowState)
-                this.Hide();
         }
 
         /// <summary>
@@ -65,6 +65,7 @@ namespace ExpressoBrowser
                 if (result.Contains("ExpressoBrowser_v1.0"))
                 {
                     // Do nothing
+                    this.Close();
                 }
                 else
                 {
@@ -78,6 +79,7 @@ namespace ExpressoBrowser
                     else if (updateResult == DialogResult.No)
                     {
                         // Do nothing
+                        this.Close();
                     }
                 }
             }
@@ -85,6 +87,7 @@ namespace ExpressoBrowser
             {
                 // Do nothing
                 // Stops any errors is user is not connected to the internet
+                this.Close();
             }
         }
     }
